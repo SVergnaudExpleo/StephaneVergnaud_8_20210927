@@ -8,13 +8,15 @@ import Header from '../src/Components/Header'
 // project routing //
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
     <Router>
+
+      <Header />
       <Switch>
         <Route exact path="/">
           <Home />
         </Route>
       </Switch>
+
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
