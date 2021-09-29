@@ -8,7 +8,6 @@ import HeaderLink from '../HeaderLink/HeaderLink'
 
 // style management //
 const HeaderContainer = styled.nav`
-// prévoir des mediaquery
 `
 
 

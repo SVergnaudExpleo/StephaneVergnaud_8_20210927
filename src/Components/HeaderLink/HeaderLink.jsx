@@ -9,9 +9,9 @@ import screenSize from '../../Utils/Styles/breakpoint'
 function headerLinkStyle(state) {
     let textSize = ''
     if (state.isPhoneV === true || state.isPhoneH === true) {
-        textSize='50px'
+        textSize='12px'
     }else if (state.isDesktop === true) {
-        textSize='200px'
+        textSize='24px'
     }
     return(
         {
@@ -22,26 +22,28 @@ function headerLinkStyle(state) {
     )
 }
 
-// main component //
 class HeaderLink extends React.Component{
+
     constructor(props){
         super(props)
-        let screenState = new screenSize()
+        let screenState = new screenSize('400px','800px','2000px')
         this.state = {
-            isPhoneV: screenState.phoneScreenVerti,
-            isPhoneH: screenState.phoneScreenHori,
-            isDesktop: screenState.desktopScreen
+            isPhoneV: screenState.phoneScreenVerti.matches,
+            isPhoneH: screenState.phoneScreenHori.matches,
+            isDesktop: screenState.desktopScreen.matches
         }
         this.updateState = this.updateState.bind(this)
-        window.addEventListener('resize', this.updateState)
+        screenState.phoneScreenVerti.addListener(this.updateState)
+        screenState.phoneScreenHori.addListener(this.updateState)
+        screenState.desktopScreen.addListener(this.updateState)
     }
-
+    
     updateState() {
-        let screenUpdate = new screenSize()
+        let screenUpdate = new screenSize('400px','800px','2000px')
         this.setState({
-            isPhoneV: screenUpdate.smartPhoneScreen,
-            isPhoneH: screenUpdate.phoneScreenHori,
-            isDesktop: screenUpdate.desktopScreen
+            isPhoneV: screenUpdate.phoneScreenVerti.matches,
+            isPhoneH: screenUpdate.phoneScreenHori.matches,
+            isDesktop: screenUpdate.desktopScreen.matches
         })
     }
 
