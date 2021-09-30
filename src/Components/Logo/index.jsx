@@ -23,16 +23,16 @@ function logoStyle (state){
 class Logo extends React.Component {
     constructor(props){
         super(props)
-        let screenState = new screenSize('400px','800px','2000px')
+        let screenState = new screenSize('400px','800px','2000px',this.updateState)
         this.state = {
             isPhoneV: screenState.phoneScreenVerti.matches,
             isPhoneH: screenState.phoneScreenHori.matches,
             isDesktop: screenState.desktopScreen.matches
         }
         this.updateState = this.updateState.bind(this)
-        screenState.phoneScreenVerti.addListener(this.updateState)
-        screenState.phoneScreenHori.addListener(this.updateState)
-        screenState.desktopScreen.addListener(this.updateState)
+        screenState.phoneScreenVerti.addEventListener('change',this.updateState)
+        screenState.phoneScreenHori.addEventListener('change',this.updateState)
+        screenState.desktopScreen.addEventListener('change',this.updateState)
     }
     
     updateState() {
@@ -46,9 +46,7 @@ class Logo extends React.Component {
 
     render() {
         return (
-            <div >
-                <img alt='logo Kasa' src={logo} style={logoStyle(this.state)} />
-            </div>
+            <img alt='logo Kasa' src={logo} style={logoStyle(this.state)} />
         )
     }
 }

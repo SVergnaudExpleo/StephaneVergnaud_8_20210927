@@ -33,9 +33,9 @@ class HeaderLink extends React.Component{
             isDesktop: screenState.desktopScreen.matches
         }
         this.updateState = this.updateState.bind(this)
-        screenState.phoneScreenVerti.addListener(this.updateState)
-        screenState.phoneScreenHori.addListener(this.updateState)
-        screenState.desktopScreen.addListener(this.updateState)
+        screenState.phoneScreenVerti.addEventListener('change',this.updateState)
+        screenState.phoneScreenHori.addEventListener('change',this.updateState)
+        screenState.desktopScreen.addEventListener('change',this.updateState)
     }
     
     updateState() {
