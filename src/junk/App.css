@@ -1,8 +1,4 @@
 a{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    column-gap: 20px;
-    justify-self: flex-end;
-    grid-template-columns: repeat(3, 1fr)
+    background-image: url(../Assets/homeTitleBg.png);
+    border-radius: 10px;
 }
