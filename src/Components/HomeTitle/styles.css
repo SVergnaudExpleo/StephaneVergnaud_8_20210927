@@ -1,0 +1,35 @@
+.homeTitle-container {
+    display:grid;
+    justify-items:center;
+    align-items:center;
+    font-size:100px;
+    margin:0 100px 0 100px;
+}
+.home-title{
+    position:absolute;
+    z-index:3;
+    font-size:48px;
+    color:white;
+}
+.img-title{
+    border-radius: 25px;
+    mix-blend-mode:darken;
+    color: black;
+    position:relative;
+    z-index: 2;
+    height: 100px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    .homeTitle-container {
+        font-size:50px;
+        margin:0 20px 0 20px;
+    }
+    .home-title{
+        font-size: 24px;
+    }
+    .img-title{
+        border-radius: 10px;
+    }
+}

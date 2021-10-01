@@ -7,7 +7,7 @@ class Home extends React.Component{
 
   render() {
     return (
-        <HomeTitle />
+        <HomeTitle page='/' />
     )
   }
 }
