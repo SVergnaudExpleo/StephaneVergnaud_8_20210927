@@ -17,6 +17,9 @@ function containerStyle(state) {
     }
     return(
         {
+            display:'grid',
+            justifyItems:'center',
+            alignItems:'center',
             fontSize:height,
             margin:margin,
             
@@ -24,9 +27,16 @@ function containerStyle(state) {
     )
 }
 function imgStyle(state){
+    let radius = ''
+    if (state.isPhoneV === true || state.isPhoneH === true) {
+        radius='25px'
+    }else if (state.isDesktop === true) {
+        radius='10px'
+    }
     return(
         {
-            borderRadius: '10px',
+            borderRadius: radius,
+            opacity:'0.7',
             position:'relative',
             zIndex:'1',
             height: '100px',
@@ -37,15 +47,16 @@ function imgStyle(state){
 function titleStyle(state){
     let font = ''
     if (state.isPhoneV === true || state.isPhoneH === true) {
-        font='50px'
+        font='24px'
     }else if (state.isDesktop === true) {
-        font='20px'
+        font='48px'
     }
     return(
-        {
+        {   
             position:'absolute',
             zIndex:'2',
             fontSize: font,
+            color:colors.secondary,
         }
     )
 }
