@@ -1,0 +1,22 @@
+.header-container{
+    margin: 40px 100px 63px 100px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+}
+.link-container{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-self: flex-end;
+    column-gap: 57px;
+    
+}
+
+@media only screen and (max-width: 800px) {
+    .header-container{
+        margin: 20px 20px 16px 20px;
+    }
+    .link-container{
+        column-gap: 10px;
+    }
+}
