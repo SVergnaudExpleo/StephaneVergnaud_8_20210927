@@ -2,10 +2,16 @@
     color: #FF6060;
     text-decoration: none;
     font-weight: 500;
-    font-size: 24px;
-    
+    font-size: 24px; 
 }
+.link-error{
+    color: #FF6060;
+    text-decoration: none;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 24px;
 
+}
 @media (max-width: 800px){
     .link-header{
         font-size: 12px;

@@ -8,8 +8,19 @@ import './styles.css'
 class HomeTitle extends React.Component{
     constructor(props){
         super(props)
-        this.page = props.page
+        this.state = {
+            page: props.page,
+        }
+        //this.updateState = this.updateState.bind(this)
+        
     }
+/*     updateState = () => {
+        this.setState({
+            page: '',
+        })
+    } */
+
+
 
     render() {
         return (
@@ -17,7 +28,7 @@ class HomeTitle extends React.Component{
                 <div className='home-title'>
                     Chez vous, partout et ailleurs
                 </div>
-                <img className='img-title' src={homeTitleBg} alt='title img'/>
+                <img className='img-title' src={this.state.page} alt='title img'/>
             </div>
         )
     }
