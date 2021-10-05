@@ -1,0 +1,24 @@
+.bg-title{
+    margin:0 100px 0 100px;
+    height: 233px;
+    border-radius: 25px;
+    display:grid;
+    justify-items:center;
+    align-items:center;
+}
+.text-title{
+    font-size:48px;
+    color:white;
+}
+
+@media only screen and (max-width: 800px) {
+    .bg-title{
+        margin:0 20px 0 20px;
+        height: 111px;
+        border-radius: 10px;
+        font-size: 24px;
+    }
+    .text-title{
+        font-size: 24px;
+    }
+}

@@ -12,24 +12,31 @@ class LinkComponent extends React.Component{
         this.state = {
             class: '',
             underline: {
-                textDecoration: 'underline'
+                textDecoration: 'none'
             }
         }
+        this.updateClass = this.updateClass.bind(this)
+        this.updateUnderlineStyle = this.updateUnderlineStyle.bind(this)
+        this.underlineStyle = this.underlineStyle.bind(this)
     }
 
-    
 
-    componentDidMount(){
-        // class management
+    updateClass(){
+         // class management
         let classUpdate =''
         if (this.props.place === 'header' ) {
             classUpdate = 'link-header'
         }else if (this.props.place === 'error') {
             classUpdate = 'link-error'
         }
+        this.setState({
+            class: classUpdate,
+        })
+    }
 
+    updateUnderlineStyle(){
         // underlining style management
-        let underlineUpdate = {}
+        let underlineUpdate = {textDecoration: 'none'}
         let path = window.location.pathname
         if (this.props.pageRedirect === path ) {
             underlineUpdate = {textDecoration: 'underline'}
@@ -37,15 +44,31 @@ class LinkComponent extends React.Component{
             underlineUpdate = {textDecoration: 'initial'}
         }
         this.setState({
-            class: classUpdate,
             underline: underlineUpdate,
         })
     }
     
 
+    underlineStyle(){
+        if (this.props.pageRedirect === window.location.pathname) {
+            this.setState({
+                underline: {textDecoration: 'underline'},
+            })
+        }else{
+            this.setState({
+                underline: {textDecoration: 'underline'},
+            })
+        }
+    }
+
+    componentDidMount(){
+       this.updateClass()
+       //this.updateUnderlineStyle()
+    }
+ 
     render() {
         return (
-            <Link className={this.state.class} to={this.props.pageRedirect} style={this.state.underline} >{this.props.text}</Link>
+            <Link /* onClick={this.underlineStyle} */ className={this.state.class} to={this.props.pageRedirect} style={this.state.underline} >{this.props.text}</Link>
         )
     }
 }

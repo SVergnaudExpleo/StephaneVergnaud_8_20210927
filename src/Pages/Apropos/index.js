@@ -1,6 +1,9 @@
 // import react modules //
 import React from "react"
 // import project components //
+import Header from "../../Container/Header"
+import PictureTitle from "../../Container/PictureTitle"
+import titleBgApropos from '../../Assets/titleBgApropos.png'
 
 
 class Apropos extends React.Component{
@@ -8,7 +11,8 @@ class Apropos extends React.Component{
   render() {
     return (
       <div>
-        A PROPOS
+        <Header />
+        <PictureTitle text={'Chez vous, partout et ailleurs'} imgBg={titleBgApropos} darkBg={true} />
       </div>
     )
   }
