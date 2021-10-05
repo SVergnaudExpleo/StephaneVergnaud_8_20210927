@@ -9,9 +9,7 @@ import './styles.css'
 class Card extends React.Component{
     constructor(props){
         super(props)
-        this.state ={
-
-        }
+        this.state ={}
         this.style = {
             backgroundImage: `url(${props.imgBg})`,
             backgroundSize:'cover'
@@ -20,7 +18,7 @@ class Card extends React.Component{
 
     render() {
         return (
-            <Link className='card' style={this.style} to={'/'+this.props.buildingData.id}>
+            <Link className='card' style={this.style} to={'/detail/'+this.props.buildingData.id}>
                 <div className='card-title'>
                     {this.props.locationTitle}
                 </div>

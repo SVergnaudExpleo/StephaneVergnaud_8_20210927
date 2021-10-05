@@ -12,16 +12,11 @@ class PictureTitle extends React.Component{
             backgroundImage: `url(${props.imgBg})`,
             backgroundSize:'cover'
         }
-        this.darkStyle = {
-            backgroundImage: `url(${props.imgBg})`,
-            backgroundSize:'cover',
-            border: 'solid 5px'
-        }
     }
 
     render() {
         return (
-            <div className='bg-title' style={this.props.darkBg === true ? this.darkStyle : this.style}>
+            <div className='bg-title' style={this.style}>
                 <div className='text-title' >
                     {this.props.text}
                 </div>
@@ -33,7 +28,6 @@ class PictureTitle extends React.Component{
 PictureTitle.propTypes = {
     text: PropTypes.string.isRequired,
     imgBg: PropTypes.string.isRequired,
-    darkBg: PropTypes.bool.isRequired
 }
 
 export default PictureTitle

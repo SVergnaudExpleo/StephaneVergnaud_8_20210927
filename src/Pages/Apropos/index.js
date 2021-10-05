@@ -2,7 +2,7 @@
 import React from "react"
 // import project components //
 import Header from "../../Container/Header"
-import PictureTitle from "../../Container/PictureTitle"
+import PictureTitle from "../../Components/PictureTitle"
 import titleBgApropos from '../../Assets/titleBgApropos.png'
 
 

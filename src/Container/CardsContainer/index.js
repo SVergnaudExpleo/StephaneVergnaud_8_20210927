@@ -19,11 +19,14 @@ class CardsContainer extends React.Component{
         return (
             <ul className='card-container'>
                 {data.map((building, index) => (
-                    <Card key={`${building}-${index}`} locationTitle={building.title} imgBg={building.cover} buildingData={building} />
+                    <Card 
+                        key={`${building}-${index}`} 
+                        locationTitle={building.title} 
+                        imgBg={building.cover} 
+                        buildingData={building} 
+                    />
                 ))}
             </ul>
-
-
         )
     }
 }

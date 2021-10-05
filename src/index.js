@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 // project modules //
 import Home from './Pages/Home'
 import Apropos from './Pages/Apropos'
-import Error from '../src/Pages/Error'
+import Error from '../src/Pages/Error';
+import Detail from './Pages/Detail'
 
 // project routing //
 ReactDOM.render(
@@ -18,9 +19,15 @@ ReactDOM.render(
         <Route exact path="/aPropos">
           <Apropos />
         </Route>
+        <Route 
+          exact path='/detail/:id'
+        >
+          <Detail />
+        </Route>
         <Route exact path="*">
           <Error />
         </Route>
+
       </Switch>
     </Router>
   </React.StrictMode>,
