@@ -3,6 +3,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 // import preject component //
 import './styles.css'
+import data from '../../Assets/data'
+import Card from '../../Components/Card'
 
 // main component //
 class CardsContainer extends React.Component{
@@ -15,9 +17,13 @@ class CardsContainer extends React.Component{
 
     render() {
         return (
-            <div className='card-container'>
-                card list
-            </div>
+            <ul className='card-container'>
+                {data.map((building, index) => (
+                    <Card key={`${building}-${index}`} locationTitle={building.title} imgBg={building.cover} buildingData={building} />
+                ))}
+            </ul>
+
+
         )
     }
 }

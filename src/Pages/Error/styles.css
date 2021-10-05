@@ -1,0 +1,28 @@
+.error-container{
+    display: grid;
+    justify-items: center;
+}
+.error-number{
+    color: #FF6060;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 288px;
+    margin: 69px 0 68px 0;
+}
+.error-description{
+    color: #FF6060;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    margin: 0 0 182px 0;
+}
+@media only screen and (max-width: 800px) {
+    .error-number{
+        font-size: 96px;
+        margin: 175px 0 11px 0;
+    }
+    .error-description{
+        font-size: 18px;
+        margin: 0 0 133px 0;
+    }
+}

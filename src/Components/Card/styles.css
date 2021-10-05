@@ -1,3 +1,24 @@
 .card{
     border-radius: 10px;
+    height: 340px;
+    padding: 0 20px 20px 20px;
+    display: grid;
+    align-items: flex-end;
+    text-decoration: none;
+}
+.card-title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: white;/* #FF6060 */
+
+/*     text-shadow: 1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, -1px 0 0 black, 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
+ */
+}
+@media only screen and (max-width:800px) {
+    .card{
+        height: 255px;
+    }
 }
