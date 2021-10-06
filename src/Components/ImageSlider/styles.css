@@ -1,0 +1,62 @@
+.slider-container{
+    margin: 20px 100px 0 100px;
+    display: grid;
+    align-items: center;
+    border-radius:25px;
+    height: 415px;
+}
+
+.slider-wrapper{
+    z-index: 1;
+    border-radius:25px;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.slider{
+    height: 100%;
+    width: 100%;
+    flex-shrink: 0;
+    background-position: center;
+    background-size:cover;
+}
+
+.slider-triger:hover{
+    cursor: pointer;
+    background-color: #FF6060;
+}
+.slider-triger{
+    width: 47px;
+    height: 80px;
+    background: none;
+    border: none;
+}
+.next{
+    background-position: center;
+    background-size: cover;
+    background-image: url("../../Assets/VectorToRight.png");
+    justify-self: end;
+    position: absolute;
+    z-index: 2;
+}
+.previous{
+    background-position: center;
+    background-size:cover;
+    background-image: url("../../Assets/VectorToLeft.png");
+    justify-self: start;
+    position: absolute;
+    z-index: 2;
+    orientation: -1;
+}
+
+@media only screen and (max-width: 800px) {
+    .slider-wrapper{
+        
+        border-radius:10px;
+        height: 255px;
+    }
+    .slider-container{
+        margin: 27px 20px 0 20px;
+    }
+}

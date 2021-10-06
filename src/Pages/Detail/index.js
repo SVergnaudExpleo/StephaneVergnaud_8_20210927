@@ -2,7 +2,7 @@
 import React from "react"
 // import project components //
 import Header from '../../Container/Header'
-import Slider from "../../Components/Slider"
+import ImageSlider from "../../Components/ImageSlider"
 
 class Detail extends React.Component{
     constructor(props){
@@ -13,7 +13,7 @@ class Detail extends React.Component{
         return (
             <div>
                 <Header/>
-                <Slider />
+                <ImageSlider />
             </div>
         )
     }
