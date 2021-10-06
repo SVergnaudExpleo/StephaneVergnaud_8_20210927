@@ -12,7 +12,7 @@ class Apropos extends React.Component{
     return (
       <div>
         <Header />
-        <PictureTitle text={'Chez vous, partout et ailleurs'} imgBg={titleBgApropos} darkBg={true} />
+        <PictureTitle text={''} imgBg={titleBgApropos} darkBg={true} />
       </div>
     )
   }
