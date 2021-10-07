@@ -10,17 +10,15 @@ import Card from '../../Components/Card'
 class CardsContainer extends React.Component{
     constructor(props){
         super(props)
-        this.state ={
-
-        }
+        this.state ={}
     }
 
     render() {
         return (
             <ul className='card-container'>
-                {data.map((building, index) => (
+                {data.map((building) => (
                     <Card 
-                        key={`${building}-${index}`} 
+                        key={building.id} 
                         locationTitle={building.title} 
                         imgBg={building.cover} 
                         buildingData={building} 

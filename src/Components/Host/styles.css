@@ -1,0 +1,28 @@
+.host-container{
+    display: grid;
+    grid-template-areas: "host picture";
+    column-gap: 10px;
+    align-items: center;
+}
+.host-name{
+    color:#FF6060;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: end;
+    width: 93px;
+}
+.host-picture{
+    height: 64px;
+    width: 64px;
+    border-radius: 32px;
+}
+@media only screen and (max-width: 800px) {
+    .host-name{
+        font-size: 12px;
+    }
+    .host-picture{
+        height: 32px;
+        width: 32px;
+        border-radius: 16px;
+    }
+}

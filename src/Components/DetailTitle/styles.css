@@ -1,0 +1,23 @@
+.title-container{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    color: #FF6060;
+}
+.title{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+}
+.location{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+}
+@media only screen and (max-width: 800px) {
+    .title{
+        font-size: 18px;
+    }
+    .location{
+        font-size: 14px;
+    }
+}

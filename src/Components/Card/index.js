@@ -19,7 +19,7 @@ class Card extends React.Component{
 
     render() {
         return (
-            <Link className='card' style={this.style} to={'/detail/'+this.props.buildingData.id}>
+            <Link className='card' style={this.style} to={'/detail/'+this.props.buildingData.id} >
                 <div className='card-title'>
                     {this.props.locationTitle}
                 </div>

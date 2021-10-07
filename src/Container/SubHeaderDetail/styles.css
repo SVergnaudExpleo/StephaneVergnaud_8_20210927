@@ -1,0 +1,18 @@
+.subHeader-container{
+    display: grid;
+    grid-template-areas: 
+        "title host"
+        "tags stars"
+    ;
+}
+.detail-title{
+    grid-area: title;
+}
+.detail-host{
+    grid-area: host;
+    justify-self: end;
+}
+.detail-tags{
+    grid-area: tags;
+    margin-top: 24px;
+}
