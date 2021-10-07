@@ -1,3 +1,6 @@
+.errorPage-container{
+    margin: 40px 100px 40px 100px;
+}
 .error-container{
     display: grid;
     justify-items: center;
@@ -16,7 +19,11 @@
     font-size: 36px;
     margin: 0 0 182px 0;
 }
+
 @media only screen and (max-width: 800px) {
+    .errorPage-container{
+        margin: 20px 20px 20px 20px;
+    }
     .error-number{
         font-size: 96px;
         margin: 175px 0 11px 0;

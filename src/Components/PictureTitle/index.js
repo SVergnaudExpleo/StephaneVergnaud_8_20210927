@@ -10,7 +10,8 @@ class PictureTitle extends React.Component{
         super(props)
         this.style = {
             backgroundImage: `url(${props.imgBg})`,
-            backgroundSize:'cover'
+            backgroundSize:'cover',
+            backgroundPosition: 'center'
         }
     }
 

@@ -3,6 +3,7 @@ import React from "react"
 // import project components //
 import Header from '../../Container/Header'
 import ImageSlider from "../../Components/ImageSlider"
+import './styles.css'
 
 class Detail extends React.Component{
     constructor(props){
@@ -11,9 +12,11 @@ class Detail extends React.Component{
     }
     render() {
         return (
-            <div>
+            <div className='detail-container'>
                 <Header/>
-                <ImageSlider />
+                <div className='picture-container'>
+                    <ImageSlider />
+                </div>
             </div>
         )
     }

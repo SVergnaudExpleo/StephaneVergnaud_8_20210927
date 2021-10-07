@@ -1,9 +1,8 @@
 .slider-container{
-    margin: 20px 100px 0 100px;
     display: grid;
     align-items: center;
     border-radius:25px;
-    height: 415px;
+    height: 100%;
 }
 
 .slider-wrapper{
@@ -52,11 +51,6 @@
 
 @media only screen and (max-width: 800px) {
     .slider-wrapper{
-        
         border-radius:10px;
-        height: 255px;
-    }
-    .slider-container{
-        margin: 27px 20px 0 20px;
     }
 }

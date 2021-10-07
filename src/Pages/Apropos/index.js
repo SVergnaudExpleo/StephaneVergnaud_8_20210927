@@ -4,15 +4,18 @@ import React from "react"
 import Header from "../../Container/Header"
 import PictureTitle from "../../Components/PictureTitle"
 import titleBgApropos from '../../Assets/titleBgApropos.png'
+import './styles.css'
 
 
 class Apropos extends React.Component{
 
   render() {
     return (
-      <div>
+      <div className='aPropos-container'>
         <Header />
-        <PictureTitle text={''} imgBg={titleBgApropos} />
+        <div className='picture-container'>
+          <PictureTitle text={''} imgBg={titleBgApropos} />
+        </div>
       </div>
     )
   }

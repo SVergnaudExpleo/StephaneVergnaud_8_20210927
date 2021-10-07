@@ -1,0 +1,17 @@
+.detail-container{
+    margin: 40px 100px 40px 100px;
+}
+.picture-container{
+    margin-top:20px;
+    height: 415px;
+}
+
+@media only screen and (max-width: 800px) {
+    .detail-container{
+        margin: 20px 20px 20px 20px;
+    }
+    .picture-container{
+        margin-top:27px;
+        height: 255px;
+    }
+}

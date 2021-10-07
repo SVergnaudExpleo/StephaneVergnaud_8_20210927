@@ -12,7 +12,8 @@ class Card extends React.Component{
         this.state ={}
         this.style = {
             backgroundImage: `url(${props.imgBg})`,
-            backgroundSize:'cover'
+            backgroundSize:'cover',
+            backgroundPosition: 'center'
         }
     }
 

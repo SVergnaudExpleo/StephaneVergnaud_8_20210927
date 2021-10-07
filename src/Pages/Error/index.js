@@ -7,7 +7,7 @@ import './styles.css'
 class Error extends React.Component{
   render() {
     return (
-      <div>
+      <div className='errorPage-container'>
         <Header/>
         <div className='error-container'>
           <div className='error-number'>
