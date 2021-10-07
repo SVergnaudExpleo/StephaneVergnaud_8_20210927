@@ -6,6 +6,7 @@ import DetailTitle from '../../Components/DetailTitle'
 import Host from '../../Components/Host'
 import './styles.css'
 import Tags from '../../Components/Tags'
+import Stars from '../../Components/Stars'
 
 
 // main component //
@@ -30,6 +31,11 @@ class SubHeaderDetail extends React.Component{
                 </div>
                 <div className='detail-tags'>
                     <Tags 
+                        datas={this.props.datas}
+                    />
+                </div>
+                <div className='detail-stars'>
+                    <Stars 
                         datas={this.props.datas}
                     />
                 </div>

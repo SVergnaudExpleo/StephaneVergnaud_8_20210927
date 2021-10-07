@@ -1,0 +1,23 @@
+.stars-container{
+    position: relative;
+    display: grid;
+    height: 30px;
+}
+.grey-container{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+}
+.red-container{
+    display: flex;
+    position: absolute;
+    z-index: 2;
+}
+.grey{
+    height: 30px;
+    width: 30px;
+}
+.red{
+    height: 30px;
+    width: 30px;
+}

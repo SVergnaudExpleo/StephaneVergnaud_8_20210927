@@ -1,6 +1,5 @@
 // import react modules //
 import React from 'react'
-import PropTypes from 'prop-types'
 // import preject component //
 import './styles.css'
 import data from '../../Assets/data'
@@ -12,7 +11,6 @@ class CardsContainer extends React.Component{
         super(props)
         this.state ={}
     }
-
     render() {
         return (
             <ul className='card-container'>
@@ -27,10 +25,6 @@ class CardsContainer extends React.Component{
             </ul>
         )
     }
-}
-
-CardsContainer.propTypes = {
-
 }
 
 export default CardsContainer
