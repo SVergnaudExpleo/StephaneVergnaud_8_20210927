@@ -1,0 +1,27 @@
+.dropDown-container{
+
+}
+.dropTitle-aPropos{
+    display: grid;
+    grid-template-areas: "text chevron";
+    align-items: center;
+    background-color: #ff6060;
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 20px 0 20px;
+    height: 47px;
+    border-radius: 5px;
+}
+.dropTitle-detail{
+
+}
+.dropDown-chevron{
+    justify-self: end;
+}
+.dropDown-text{
+    background-color: violet;
+    overflow: hidden;
+    transition: 0.5s;    
+}
