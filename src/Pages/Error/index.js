@@ -4,6 +4,7 @@ import React from "react"
 import LinkComponent from "../../Components/LinkComponent"
 import Header from '../../Container/Header'
 import './styles.css'
+
 class Error extends React.Component{
   render() {
     return (

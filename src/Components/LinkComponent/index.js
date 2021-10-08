@@ -17,12 +17,9 @@ class LinkComponent extends React.Component{
         }
         this.updateClass = this.updateClass.bind(this)
         this.updateUnderlineStyle = this.updateUnderlineStyle.bind(this)
-        this.underlineStyle = this.underlineStyle.bind(this)
     }
 
-
     updateClass(){
-         // class management
         let classUpdate =''
         if (this.props.place === 'header' ) {
             classUpdate = 'link-header'
@@ -35,40 +32,28 @@ class LinkComponent extends React.Component{
     }
 
     updateUnderlineStyle(){
-        // underlining style management
         let underlineUpdate = {textDecoration: 'none'}
         let path = window.location.pathname
         if (this.props.pageRedirect === path ) {
             underlineUpdate = {textDecoration: 'underline'}
         }else if (this.props.pageRedirect === 'error') {
             underlineUpdate = {textDecoration: 'initial'}
+        }else if (this.props.place === 'error') {
+            underlineUpdate = {textDecoration: 'underline'}
         }
         this.setState({
             underline: underlineUpdate,
         })
     }
-    
-
-    underlineStyle(){
-        if (this.props.pageRedirect === window.location.pathname) {
-            this.setState({
-                underline: {textDecoration: 'underline'},
-            })
-        }else{
-            this.setState({
-                underline: {textDecoration: 'underline'},
-            })
-        }
-    }
 
     componentDidMount(){
        this.updateClass()
-       //this.updateUnderlineStyle()
+       this.updateUnderlineStyle()
     }
  
     render() {
         return (
-            <Link /* onClick={this.underlineStyle} */ className={this.state.class} to={this.props.pageRedirect} style={this.state.underline} >{this.props.text}</Link>
+            <Link className={this.state.class} to={this.props.pageRedirect} style={this.state.underline} >{this.props.text}</Link>
         )
     }
 }

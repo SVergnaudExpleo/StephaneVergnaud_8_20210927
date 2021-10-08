@@ -19,7 +19,7 @@ class Detail extends React.Component{
         return (
             <div className='detail-container'>
                 <Header/>
-                <div className='picture-container'>
+                <div className='slider-container'>
                     <ImageSlider pictures={this.myData[0].pictures} />
                 </div>
                 <div className='sub-header'>

@@ -8,17 +8,14 @@ import './styles.css'
 class PictureTitle extends React.Component{
     constructor(props){
         super(props)
-        this.style = {
-            backgroundImage: `url(${props.imgBg})`,
-            backgroundSize:'cover',
-            backgroundPosition: 'center'
-        }
+        this.state={}
     }
 
     render() {
         return (
-            <div className='bg-title' style={this.style}>
-                <div className='text-title' >
+            <div className='pictureTitle-container' >
+                <img className='title-image' alt='title' src={this.props.imgBg} />
+                <div className='title-text' >
                     {this.props.text}
                 </div>
             </div>

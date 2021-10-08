@@ -11,7 +11,10 @@ class Card extends React.Component{
         super(props)
         this.state ={}
         this.style = {
-            backgroundImage: `url(${props.imgBg})`,
+            backgroundImage: `
+                linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 96, 96, 0.6) 85%,rgba(255, 96, 96, 0.8) 95%),
+                url(${props.imgBg})
+            `,
             backgroundSize:'cover',
             backgroundPosition: 'center'
         }
