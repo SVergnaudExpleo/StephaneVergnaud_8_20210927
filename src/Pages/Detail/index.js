@@ -6,6 +6,7 @@ import ImageSlider from "../../Components/ImageSlider"
 import SubHeaderDetail from "../../Container/SubHeaderDetail"
 import datas from '../../Assets/data'
 import './styles.css'
+import DropDown from "../../Components/DropDown"
 
 class Detail extends React.Component{
     constructor(props){
@@ -13,8 +14,9 @@ class Detail extends React.Component{
         this.state = {}
         let neededId = window.location.pathname.substring(8)
         this.myData = datas.filter(data => data.id === neededId)
+        this.describe = [this.myData[0].description]
     }
-
+    
     render() {
         return (
             <div className='detail-container'>
@@ -26,6 +28,10 @@ class Detail extends React.Component{
                     <SubHeaderDetail 
                         datas={this.myData[0]} 
                     />
+                </div>
+                <div className='dropDown-detailContainer'>
+                    <DropDown title={'Description'} whereUsed={'detail'} text={this.describe} />
+                    <DropDown title={'Equipements'} whereUsed={'detail'} text={this.myData[0].equipments} />
                 </div>
             </div>
         )

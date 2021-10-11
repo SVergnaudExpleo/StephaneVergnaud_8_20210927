@@ -8,7 +8,13 @@
 .sub-header{
     margin-top: 30px;
 }
-
+.dropDown-detailContainer{
+    margin: 26px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "1 2";
+    column-gap: 76px;
+}
 
 @media only screen and (max-width: 800px) {
     .detail-container{

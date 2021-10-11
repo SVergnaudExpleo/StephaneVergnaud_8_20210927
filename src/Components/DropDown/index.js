@@ -12,7 +12,12 @@ class DropDown extends React.Component{
         super(props)
         this.state = {
             clickState: 'up',
-            textHeight: {height: '0em'},
+            textHeight: {
+                visibility: 'collapse',
+                height: '0',
+                paddingTop: '0px',
+                paddingBottom: '0px',
+            },
         }
         this.updateChevronState = this.updateChevronState.bind(this)
     }
@@ -22,10 +27,20 @@ class DropDown extends React.Component{
         let heightUpdate = '' 
         if (this.state.clickState === 'up') {
             clickUpdate ='down'
-            heightUpdate = {height: '1em'}
+            heightUpdate = {
+                visibility: 'visible',
+                height: '100%',
+                
+            }
         }else if (this.state.clickState === 'down') {
             clickUpdate = 'up'
-            heightUpdate= {height: '0em'}
+            heightUpdate= {
+                
+                visibility: 'hidden',
+                height: '0',
+                paddingTop: '0px',
+                paddingBottom: '0px',
+            }
         }
         this.setState({
             clickState: clickUpdate,
@@ -47,8 +62,14 @@ class DropDown extends React.Component{
                         src={this.state.clickState === 'up' ? chevronDown : chevronUp} 
                     />
                 </div>
-                <div className='dropDown-text' style={this.state.textHeight}>
-                    {this.props.text}
+                <div
+                    className={this.props.whereUsed === 'aPropos' ? 'dropText-aPropos' : 'dropText-detail'}
+                    style={this.state.textHeight}
+                >
+                    {
+                    this.props.text.map((txt,index)=> (
+                        <div key={txt+index}>{txt}</div>
+                    ))}
                 </div>
 
             </div>
@@ -58,8 +79,9 @@ class DropDown extends React.Component{
 
 DropDown.propTypes = {
     title: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
-    whereUsed: PropTypes.string.isRequired
+    text: PropTypes.array.isRequired,
+    whereUsed: PropTypes.string.isRequired,
+
 }
 
 export default DropDown

@@ -17,7 +17,6 @@ class Tags extends React.Component{
                 {
                     this.props.datas.tags.map((tag,index)=> (
                         <div className='tag' key={tag+index}>{tag}</div>
-
                 ))}
             </div>
         )

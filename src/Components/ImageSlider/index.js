@@ -44,15 +44,14 @@ class ImageSlider extends React.Component{
         return (
             <div className='slider-container'>
                 <button 
-                    className='slider-triger next'
+                    className={this.props.pictures.length === 1 ? 'triger-hiden' : 'slider-triger next'} 
                     onClick={this.updateStateNext}
                 />
                 <button 
-                    className='slider-triger previous'
+                    className= {this.props.pictures.length === 1 ? 'triger-hiden' : 'slider-triger previous'}
                     onClick={this.updateStatePrev}                    
                 />
-                <div className='slider-wrapper' title='Faites défiler les images pour un apperçu de votre future location'>
-                    
+                <div className='slider-wrapper' >
                     {this.props.pictures.map((image, index) => (
                         <div 
                             className='slider'

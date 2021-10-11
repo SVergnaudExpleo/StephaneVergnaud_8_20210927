@@ -5,6 +5,11 @@
     margin-top:50px;
     height: 233px;
 }
+.dropDown-container{
+    display: grid;
+    margin: 33px 209px 33px 209px;
+    row-gap: 5px;
+}
 @media only screen and (max-width: 800px) {
     .aPropos-container{
         margin: 20px 20px 20px 20px;
