@@ -8,7 +8,7 @@
     color: white;
     cursor: pointer;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.5em;
     padding: 0 16px 0 18px;
     height: 47px;
     border-radius: 5px;
@@ -21,7 +21,7 @@
     color: white;
     cursor: pointer;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.5em;
     padding: 0 18px 0 20px;
     height: 52px;
     border-radius: 10px;
@@ -35,7 +35,7 @@
     overflow: hidden;
     color: #ff6060;
     background-color: #F6F6F6;
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 142.6%;
     padding-top: 36px;
     padding-right: 27px;
@@ -46,11 +46,11 @@
     overflow: hidden;
     color: #ff6060;
     background-color: #F6F6F6;
-    font-size: 18px;
+    font-size: 1.5em;
     line-height: 142.6%;
     padding-top: 40px;
     padding-right: 12px;
     padding-bottom: 27px;
     padding-left: 20px;
-    height: 100%;
+    height: fit-content;
 }

@@ -7,9 +7,7 @@ import Apropos from '../../Pages/Apropos'
 import Detail from '../../Pages/Detail'
 import Error from '../../Pages/Error'
 
-
 // project routing //
-
 const routes = [
     {
         path: "/",
@@ -30,11 +28,6 @@ const routes = [
 ]
 
 class RouterApp extends React.Component{
-    constructor(props){
-        super(props)
-        this.state ={}
-    }
-
     render() {
         return (
             <Router>

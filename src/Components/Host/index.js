@@ -8,7 +8,6 @@ import './styles.css'
 class Host extends React.Component{
     constructor(props){
         super(props)
-        this.state = {}
         this.style ={
             backgroundImage: `url"${this.props.datas.host.picture}"`,
             backgroundPosition: 'center',

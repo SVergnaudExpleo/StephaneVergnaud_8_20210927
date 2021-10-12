@@ -6,11 +6,6 @@ import './styles.css'
 
 // main component //
 class Tags extends React.Component{
-    constructor(props){
-        super(props)
-        this.state = {}
-    }
- 
     render() {
         return (
             <div className='tags-container'>

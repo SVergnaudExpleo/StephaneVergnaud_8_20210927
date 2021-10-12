@@ -7,10 +7,8 @@
     text-decoration: none;
 }
 .card-title{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: bold;
+    font-size: 1.4em;
     line-height: 142.6%;
     color: white;
 }

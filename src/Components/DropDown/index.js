@@ -13,7 +13,6 @@ class DropDown extends React.Component{
         this.state = {
             clickState: 'up',
             textHeight: {
-                visibility: 'collapse',
                 height: '0',
                 paddingTop: '0px',
                 paddingBottom: '0px',
@@ -28,15 +27,11 @@ class DropDown extends React.Component{
         if (this.state.clickState === 'up') {
             clickUpdate ='down'
             heightUpdate = {
-                visibility: 'visible',
-                height: '100%',
                 
             }
         }else if (this.state.clickState === 'down') {
             clickUpdate = 'up'
             heightUpdate= {
-                
-                visibility: 'hidden',
                 height: '0',
                 paddingTop: '0px',
                 paddingBottom: '0px',

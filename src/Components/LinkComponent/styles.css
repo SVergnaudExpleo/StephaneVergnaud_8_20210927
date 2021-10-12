@@ -1,13 +1,13 @@
 .link-header{
     color: #FF6060;
     font-weight: 500;
-    font-size: 24px; 
+    font-size: 1.6em; 
 }
 .link-error{
     color: #FF6060;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.3em;
 }
 @media (max-width: 800px){
     .link-header{
