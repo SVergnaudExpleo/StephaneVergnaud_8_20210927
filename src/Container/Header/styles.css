@@ -3,15 +3,21 @@
     grid-template-columns: repeat(2, auto);
     align-items: center;
 }
+.logo-header{
+    width: 210px;
+    filter: invert(51%) sepia(35%) saturate(2311%) hue-rotate(323deg) brightness(110%) contrast(157%);
+}
 .link-container{
     display: grid;
     grid-template-columns: repeat(2, auto);
     justify-self: flex-end;
     column-gap: 57px;
 }
-
 @media only screen and (max-width: 800px) {
     .link-container{
         column-gap: 10px;
+    }
+    .logo-header{
+        width: 145px
     }
 }

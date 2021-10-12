@@ -5,8 +5,9 @@ import Header from '../../Container/Header'
 import ImageSlider from "../../Components/ImageSlider"
 import SubHeaderDetail from "../../Container/SubHeaderDetail"
 import datas from '../../Assets/data'
-import './styles.css'
 import DropDown from "../../Components/DropDown"
+import Footer from "../../Container/Footer"
+import './styles.css'
 
 class Detail extends React.Component{
     constructor(props){
@@ -19,20 +20,23 @@ class Detail extends React.Component{
     
     render() {
         return (
-            <div className='detail-container'>
-                <Header/>
-                <div className='slider-container'>
-                    <ImageSlider pictures={this.myData[0].pictures} />
+            <div>
+                <div className='detail-container'>
+                    <Header/>
+                    <div className='slider-container'>
+                        <ImageSlider pictures={this.myData[0].pictures} />
+                    </div>
+                    <div className='sub-header'>
+                        <SubHeaderDetail 
+                            datas={this.myData[0]} 
+                        />
+                    </div>
+                    <div className='dropDown-detailContainer'>
+                        <DropDown title={'Description'} whereUsed={'detail'} text={this.describe} />
+                        <DropDown title={'Equipements'} whereUsed={'detail'} text={this.myData[0].equipments} />
+                    </div>
                 </div>
-                <div className='sub-header'>
-                    <SubHeaderDetail 
-                        datas={this.myData[0]} 
-                    />
-                </div>
-                <div className='dropDown-detailContainer'>
-                    <DropDown title={'Description'} whereUsed={'detail'} text={this.describe} />
-                    <DropDown title={'Equipements'} whereUsed={'detail'} text={this.myData[0].equipments} />
-                </div>
+                <Footer />
             </div>
         )
     }
