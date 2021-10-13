@@ -12,7 +12,7 @@
     filter: brightness(70%);
 }
 .title-text{
-    font-size:3.5em;
+    font-size:48px;
     font-weight: 500;
     color:white;
     z-index: 2;

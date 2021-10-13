@@ -3,7 +3,7 @@ import React from "react"
 // import project components //
 import LinkComponent from "../../Components/LinkComponent"
 import Header from '../../Container/Header'
-import Footer from '../../Container/Footer'
+import Footer from '../../Components/Footer'
 import './styles.css'
 
 class Error extends React.Component{

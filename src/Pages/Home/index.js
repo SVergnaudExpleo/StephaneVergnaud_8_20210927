@@ -2,11 +2,11 @@
 import React from "react";
 // import project components //
 import Header from "../../Container/Header"
-import PictureTitle from "../../Components/PictureTitle";
-import CardsContainer from "../../Container/CardsContainer";
+import PictureTitle from "../../Components/PictureTitle"
+import CardsContainer from "../../Container/CardsContainer"
 import titleBgHome from '../../Assets/homeTitleBg.png'
+import Footer from "../../Components/Footer"
 import './styles.css'
-import Footer from "../../Container/Footer";
 
 
 class Home extends React.Component{

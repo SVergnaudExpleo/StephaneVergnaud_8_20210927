@@ -5,7 +5,7 @@ import Header from "../../Container/Header"
 import PictureTitle from "../../Components/PictureTitle"
 import titleBgApropos from '../../Assets/titleBgApropos.png'
 import DropDown from "../../Components/DropDown"
-import Footer from "../../Container/Footer"
+import Footer from "../../Components/Footer"
 import './styles.css'
 
 // droipdown text configuration //

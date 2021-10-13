@@ -6,7 +6,7 @@ import ImageSlider from "../../Components/ImageSlider"
 import SubHeaderDetail from "../../Container/SubHeaderDetail"
 import datas from '../../Assets/data'
 import DropDown from "../../Components/DropDown"
-import Footer from "../../Container/Footer"
+import Footer from "../../Components/Footer"
 import './styles.css'
 
 class Detail extends React.Component{

@@ -7,14 +7,14 @@
 .host-name{
     color:#FF6060;
     font-weight: 500;
-    font-size: 1.3em;
+    font-size: 18px;
     text-align: end;
-    width: 100px;
+    width: 90px;
 }
 .host-picture{
-    height: 90px;
-    width: 90px;
-    border-radius: 45px;
+    height: 64px;
+    width: 64px;
+    border-radius: 32px;
 }
 @media only screen and (max-width: 800px) {
     .host-name{
