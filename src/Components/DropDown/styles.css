@@ -1,4 +1,5 @@
-.dropTitle-aPropos{
+/* dropdown title styles */
+.dropTitle{
     display: grid;
     grid-template-areas: "text chevron";
     align-items: center;
@@ -6,19 +7,15 @@
     color: white;
     cursor: pointer;
     font-weight: 500;
+
+}
+.dropTi-aPropos{
     font-size: 24px;
-    padding: 0 16px 0 18px;
-    height: 47px;
+    padding: 6px 16px 6px 18px;
+    /* height: 47px; */
     border-radius: 5px;
 }
-.dropTitle-detail{
-    display: grid;
-    grid-template-areas: "text chevron";
-    align-items: center;
-    background-color: #ff6060;
-    color: white;
-    cursor: pointer;
-    font-weight: 500;
+.dropTi-detail{
     font-size: 18px;
     padding: 0 18px 0 20px;
     height: 52px;
@@ -29,26 +26,46 @@
     height: 15px;
     width: 24px;
 }
-.dropText-aPropos{
+/* Dropdown text styles */
+.dropText{
     overflow: hidden;
     color: #ff6060;
     background-color: #F6F6F6;
-    font-size: 24px;
     line-height: 142.6%;
+}
+
+.dropTe-aPropos{
+    font-size: 24px;
     padding-top: 36px;
     padding-right: 27px;
     padding-bottom: 19px;
     padding-left: 18px;
 }
-.dropText-detail{
-    overflow: hidden;
-    color: #ff6060;
-    background-color: #F6F6F6;
+.dropTe-detail{
     font-size: 18px;
-    line-height: 142.6%;
     padding-top: 40px;
     padding-right: 12px;
     padding-bottom: 27px;
     padding-left: 20px;
     height: fit-content;
+}
+@media only screen and (max-width: 1100px) {
+    .dropTi-aPropos{
+        font-size: 18px;
+    }
+    .dropTi-detail{}
+    .dropTe-aPropos{
+        font-size: 16px;
+    }
+    .dropTe-detail{}
+}
+@media only screen and (max-width: 600px) {
+    .dropTi-aPropos{
+        font-size: 13px;
+    }
+    .dropTi-detail{}
+    .dropTe-aPropos{
+        font-size: 12px;
+    }
+    .dropTe-detail{}
 }

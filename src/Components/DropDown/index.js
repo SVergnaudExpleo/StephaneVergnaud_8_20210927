@@ -47,7 +47,7 @@ class DropDown extends React.Component{
         return (
             <div className='dropDown' >
                 <div 
-                    className={this.props.whereUsed === 'aPropos' ? 'dropTitle-aPropos' : 'dropTitle-detail'}
+                    className={this.props.whereUsed === 'aPropos' ? 'dropTitle dropTi-aPropos' : 'dropTitle dropTi-detail'}
                     onClick={this.updateChevronState}
                 >
                     <div>{this.props.title}</div>
@@ -58,7 +58,7 @@ class DropDown extends React.Component{
                     />
                 </div>
                 <div
-                    className={this.props.whereUsed === 'aPropos' ? 'dropText-aPropos' : 'dropText-detail'}
+                    className={this.props.whereUsed === 'aPropos' ? 'dropText dropTe-aPropos' : 'dropText dropTe-detail'}
                     style={this.state.textHeight}
                 >
                     {

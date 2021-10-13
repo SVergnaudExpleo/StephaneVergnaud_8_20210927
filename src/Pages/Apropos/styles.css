@@ -1,21 +1,34 @@
 .aPropos-container{
     margin: 40px 100px 40px 100px;
 }
-.picture-container{
+.pictureApropos-container{
     margin-top:50px;
     height: 233px;
 }
 .dropDown-container{
     display: grid;
-    margin: 33px 209px 33px 209px;
-    row-gap: 5px;
+    margin: 33px 109px 33px 109px;
+    row-gap: 30px;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1100px) {
     .aPropos-container{
         margin: 20px 20px 20px 20px;
     }
-    .picture-container{
+    .pictureApropos-container{
         margin-top:16px;
+        height: 173px;
+    }
+    .dropDown-container{
+        margin: 19px 30px 20px 30px;
+        row-gap: 20px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .pictureApropos-container{
         height: 111px;
+    }
+    .dropDown-container{
+        margin: 19px 0px 20px 0px;
+        row-gap: 20px;
     }
 }

@@ -19,7 +19,7 @@ class Apropos extends React.Component{
       <div>
         <div className='aPropos-container'>
           <Header />
-          <div className='picture-container'>
+          <div className='pictureApropos-container'>
             <PictureTitle text={''} imgBg={titleBgApropos} />
           </div>
           <div className='dropDown-container'>
