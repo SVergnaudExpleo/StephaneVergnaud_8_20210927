@@ -13,7 +13,7 @@ class PictureTitle extends React.Component{
 
     render() {
         return (
-            <div className='pictureTitle-container' >
+            <div className='pictureTitle-box' >
                 <img className='title-image' alt='title' src={this.props.imgBg} />
                 <div className='title-text' >
                     {this.props.text}

@@ -15,7 +15,7 @@ class Home extends React.Component{
       <div>
         <div className='home-container'>
           <Header />
-          <div className='picture-container'>
+          <div className='pictureTitle-container'>
             <PictureTitle 
               text={'Chez vous, partout et ailleurs'} 
               imgBg={titleBgHome} 

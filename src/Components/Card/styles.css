@@ -1,7 +1,6 @@
 .card{
     border-radius: 10px;
     height: 340px;
-    padding: 0 20px 20px 20px;
     display: grid;
     align-items: flex-end;
     text-decoration: none;
@@ -11,9 +10,13 @@
     font-size: 18px;
     line-height: 142.6%;
     color: white;
+    padding: 0 20px 20px 20px;
 }
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:1100px) {
     .card{
         height: 255px;
+    }
+    .card-title{
+        padding: 0 15px 15px 15px;
     }
 }

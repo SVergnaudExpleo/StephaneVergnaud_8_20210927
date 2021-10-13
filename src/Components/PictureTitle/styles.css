@@ -1,4 +1,4 @@
-.pictureTitle-container{
+.pictureTitle-box{
     height: 100%;
     display:grid;
     justify-items:center;
@@ -17,14 +17,26 @@
     color:white;
     z-index: 2;
     position: absolute;
+    text-align: center;
 }
 
-@media only screen and (max-width: 800px) {
-    .pictureTitle-container{
+@media only screen and (max-width: 1100px) {
+    .pictureTitle-box{
         border-radius: 10px;
-        font-size: 24px;
     }
     .title-text{
+        font-size: 36px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .title-text{
         font-size: 24px;
+        padding: 0 10px 0 10px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .title-text{
+        /* justify-self:left;
+        padding-left: 5px; */
     }
 }
