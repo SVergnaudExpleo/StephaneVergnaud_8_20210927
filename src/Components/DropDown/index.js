@@ -13,9 +13,9 @@ class DropDown extends React.Component{
         this.state = {
             clickState: 'up',
             textHeight: {
-                height: '0',
-                paddingTop: '0px',
-                paddingBottom: '0px',
+                height:'0',
+                paddingTop:'0',
+                paddingBottom:'0',
             },
         }
         this.updateChevronState = this.updateChevronState.bind(this)
@@ -27,14 +27,14 @@ class DropDown extends React.Component{
         if (this.state.clickState === 'up') {
             clickUpdate ='down'
             heightUpdate = {
-                
+                height:'100%',
             }
         }else if (this.state.clickState === 'down') {
             clickUpdate = 'up'
             heightUpdate= {
-                height: '0',
-                paddingTop: '0px',
-                paddingBottom: '0px',
+               height:'0',
+               paddingTop:'0',
+               paddingBottom:'0',
             }
         }
         this.setState({
