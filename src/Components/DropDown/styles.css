@@ -12,13 +12,11 @@
 .dropTi-aPropos{
     font-size: 24px;
     padding: 6px 16px 6px 18px;
-    /* height: 47px; */
     border-radius: 5px;
 }
 .dropTi-detail{
     font-size: 18px;
-    padding: 0 18px 0 20px;
-    height: 52px;
+    padding: 13px 18px 13px 20px;
     border-radius: 10px;
 }
 .dropDown-chevron{
@@ -36,36 +34,49 @@
 
 .dropTe-aPropos{
     font-size: 24px;
-    padding-top: 36px;
-    padding-right: 27px;
-    padding-bottom: 19px;
-    padding-left: 18px;
+    padding: 36px 27px 19px 18px;
 }
 .dropTe-detail{
     font-size: 18px;
-    padding-top: 40px;
-    padding-right: 12px;
-    padding-bottom: 27px;
-    padding-left: 20px;
-    height: fit-content;
+    padding: 40px 20px 27px 20px;
 }
 @media only screen and (max-width: 1100px) {
     .dropTi-aPropos{
         font-size: 18px;
     }
-    .dropTi-detail{}
+    .dropTi-detail{
+        font-size: 18px;
+        padding: 8px 14px 8px 14px;
+        border-radius: 5px;
+    }
     .dropTe-aPropos{
         font-size: 16px;
     }
-    .dropTe-detail{}
+    .dropTe-detail{
+        font-size: 16px;
+        padding: 23px 12px 10px 12px;
+    }
+    .dropDown-chevron{
+        height: 11px;
+        width: 20px;
+    }
 }
 @media only screen and (max-width: 600px) {
     .dropTi-aPropos{
         font-size: 13px;
     }
-    .dropTi-detail{}
+    .dropTi-detail{
+        font-size: 13px;
+        padding: 6px 12px 6px 12px;
+    }
     .dropTe-aPropos{
         font-size: 12px;
     }
-    .dropTe-detail{}
+    .dropTe-detail{
+        font-size: 12px;
+    }
+    .dropDown-chevron{
+        height: 8px;
+        width: 15px;
+    }
 }

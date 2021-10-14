@@ -42,7 +42,7 @@ class ImageSlider extends React.Component{
     
     render() {
         return (
-            <div className='slider-container'>
+            <div className='slider-box'>
                 <button 
                     className={this.props.pictures.length === 1 ? 'triger-hiden' : 'slider-triger next'} 
                     onClick={this.updateStateNext}

@@ -8,7 +8,7 @@ import './styles.css'
 class Tags extends React.Component{
     render() {
         return (
-            <div className='tags-container'>
+            <div className='tags-box'>
                 {
                     this.props.datas.tags.map((tag,index)=> (
                         <div className='tag' key={tag+index}>{tag}</div>

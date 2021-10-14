@@ -1,10 +1,11 @@
-.subHeader-container{
+.subHeader-box{
     position: relative;
     display: grid;
     grid-template-areas: 
         "title host"
         "tags stars"
     ;
+    row-gap: 24px;
 }
 .detail-title{
     grid-area: title;
@@ -15,7 +16,6 @@
 }
 .detail-tags{
     grid-area: tags;
-    margin-top: 24px;
 }
 .detail-stars{
     grid-area: stars;
@@ -23,6 +23,17 @@
     justify-self: end;
     width: 150px;
 }
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:1100px) {
+    .subHeader-box{
+        grid-template-areas: 
+            "title title"
+            "tags tags"
+            "stars host"
+        ;
+        row-gap: 15px;
+    }
     
+    .detail-stars{
+        justify-self: start;
+    }
 }

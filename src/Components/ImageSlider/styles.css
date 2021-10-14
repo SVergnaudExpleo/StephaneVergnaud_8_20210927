@@ -1,7 +1,7 @@
 .slider-wrapper:hover{
     filter: contrast(0.7);
 }
-.slider-container{
+.slider-box{
     display: grid;
     align-items: center;
     border-radius:25px;
@@ -30,11 +30,11 @@
 .slider-triger:hover{
     cursor: pointer;
     filter: invert(90%);
-    /* background-color: #FF6060; */
 }
 .slider-triger{
     width: 47px;
     height: 80px;
+    margin: 0 24px 0 24px;
     background: none;
     border: none;
 }
@@ -56,8 +56,22 @@
     orientation: -1;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1100px) {
     .slider-wrapper{
         border-radius:10px;
+    }
+    .slider-triger{
+        width: 29px;
+        height: 50px;
+        margin: 0 6px 0 6px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .slider-wrapper{
+        border-radius:10px;
+    }
+    .slider-triger{
+        width: 15px;
+        height: 23px;
     }
 }

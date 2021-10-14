@@ -18,7 +18,7 @@ class SubHeaderDetail extends React.Component{
 
     render() {
         return (
-            <div className='subHeader-container'>
+            <div className='subHeader-box'>
                 <div className='detail-title'>
                     <DetailTitle 
                         datas={this.props.datas}
