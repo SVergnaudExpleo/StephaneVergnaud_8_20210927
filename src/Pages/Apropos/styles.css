@@ -3,7 +3,6 @@
 }
 .pictureApropos-container{
     margin-top:50px;
-    height: 233px;
 }
 .dropDown-container{
     display: grid;
@@ -16,7 +15,6 @@
     }
     .pictureApropos-container{
         margin-top:16px;
-        height: 173px;
     }
     .dropDown-container{
         margin: 19px 30px 20px 30px;
@@ -24,9 +22,6 @@
     }
 }
 @media only screen and (max-width: 600px) {
-    .pictureApropos-container{
-        height: 111px;
-    }
     .dropDown-container{
         margin: 19px 0px 20px 0px;
         row-gap: 20px;

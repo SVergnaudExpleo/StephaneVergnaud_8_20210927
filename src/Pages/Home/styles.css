@@ -3,7 +3,6 @@
 }
 .pictureTitle-container{
     margin-top:63px;
-    height: 233px;
 }
 .cardsContainer-container{
     margin-top:43px;
@@ -15,15 +14,9 @@
     }
     .pictureTitle-container{
         margin-top:10px;
-        height: 172px;
     }
     .cardsContainer-container{
         margin-top:22px;
         margin-bottom: 22px;
-    }
-}
-@media only screen and (max-width: 600px) {
-    .pictureTitle-container{
-        height: 111px;
     }
 }
