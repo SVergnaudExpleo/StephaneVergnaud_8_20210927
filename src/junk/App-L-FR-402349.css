@@ -1,8 +1,0 @@
-a{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    column-gap: 20px;
-    justify-self: flex-end;
-    grid-template-columns: repeat(3, 1fr)
-}
