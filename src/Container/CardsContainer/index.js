@@ -7,10 +7,6 @@ import Card from '../../Components/Card'
 
 // main component //
 class CardsContainer extends React.Component{
-    constructor(props){
-        super(props)
-        this.state ={}
-    }
     render() {
         return (
             <ul className='card-container'>

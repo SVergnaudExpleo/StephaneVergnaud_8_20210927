@@ -9,7 +9,6 @@ import './styles.css'
 class Card extends React.Component{
     constructor(props){
         super(props)
-        this.state ={}
         this.style = {
             backgroundImage: `
                 linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 96, 96, 0.6) 85%,rgba(255, 96, 96, 0.8) 95%),
@@ -22,11 +21,13 @@ class Card extends React.Component{
 
     render() {
         return (
-            <Link className='card' style={this.style} to={'/detail/'+this.props.buildingData.id} >
-                <div className='card-title'>
-                    {this.props.locationTitle}
-                </div>
-            </Link>
+            <li className="li-card">
+                <Link className='card' style={this.style} to={'/detail/'+this.props.buildingData.id} >
+                    <div className='card-title'>
+                        {this.props.locationTitle}
+                    </div>
+                </Link>
+            </li>
         )
     }
 }

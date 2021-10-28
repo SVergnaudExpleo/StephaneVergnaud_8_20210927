@@ -8,7 +8,6 @@ import titleBgHome from '../../Assets/homeTitleBg.png'
 import Footer from "../../Components/Footer"
 import './styles.css'
 
-
 class Home extends React.Component{
   render() {
     return (
@@ -25,7 +24,6 @@ class Home extends React.Component{
           <div className='cardsContainer-container'>
             <CardsContainer />
           </div>
-          
         </div>
         <Footer />
       </div>

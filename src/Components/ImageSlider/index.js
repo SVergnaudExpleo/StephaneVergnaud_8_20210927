@@ -51,6 +51,9 @@ class ImageSlider extends React.Component{
                     className= {this.props.pictures.length === 1 ? 'triger-hiden' : 'slider-triger previous'}
                     onClick={this.updateStatePrev}                    
                 />
+                <div className='slider-count'>
+                    {this.state.currentSlide+1}/{this.props.pictures.length}
+                </div>
                 <div className='slider-wrapper' >
                     {this.props.pictures.map((image, index) => (
                         <div 
@@ -69,7 +72,6 @@ class ImageSlider extends React.Component{
         )
     }
 }
-
 
 ImageSlider.propTypes = {
    pictures: PropTypes.array.isRequired

@@ -12,7 +12,6 @@ import './styles.css'
 class Detail extends React.Component{
     constructor(props){
         super(props)
-        this.state = {}
         let neededId = window.location.pathname.substring(8)
         this.myData = datas.filter(data => data.id === neededId)
         this.describe = [this.myData[0].description]
